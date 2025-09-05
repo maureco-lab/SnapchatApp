@@ -11,20 +11,20 @@
     <ImageView
         android:id="@+id/imglogologin"
         android:layout_width="100dp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
         android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
         android:src="@drawable/amongois" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imglogologin"
-        app:startIconDrawable="@drawable/baseline_email"
+        android:layout_margin="10dp"
+        android:hint="Insira seu email"
         app:endIconMode="clear_text"
-        android:hint="Insira seu email">
+        app:startIconDrawable="@drawable/baseline_email">
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -36,21 +36,40 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtSennha"
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtEmail"
-        app:startIconDrawable="@drawable/baseline_lock"
+        android:layout_margin="10dp"
+        android:hint="Insira sua senha"
         app:endIconMode="password_toggle"
-        android:hint="Insira sua senha">
+        app:startIconDrawable="@drawable/baseline_lock">
 
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEdit"
+            android:id="@+id/inputSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSennha"
+        android:layout_marginLeft="15dp"
+        android:text="Não tem cadastro?" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSennha"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FDFA00"
+        android:padding="15dp"
+        android:text="Entrar"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
 
 
 </RelativeLayout>
