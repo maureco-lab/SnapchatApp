@@ -75,5 +75,17 @@
         android:textColor="@color/black"
         android:textSize="20dp"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#96CADC"
+        android:padding="15dp"
+        android:text="Cadastre-se"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
 
 </RelativeLayout>
