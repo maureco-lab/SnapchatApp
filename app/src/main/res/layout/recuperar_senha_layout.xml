@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecuperarSenhaActivity">
+
+    <ImageView
+        android:id="@+id/imglogologin"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/amongois" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglogologin"
+        android:layout_margin="10dp"
+        android:hint="Insira seu email"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtSennha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        android:layout_margin="10dp"
+        android:hint="Insira sua nova senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNovas"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#FDFA00"
+        android:padding="15dp"
+        android:text="Entrar"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtNovas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSennha"
+        android:layout_margin="10dp"
+        android:hint="Confirme sua senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNovas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>
