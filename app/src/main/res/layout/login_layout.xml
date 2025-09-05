@@ -48,7 +48,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputSenha"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,8 +57,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/edtSennha"
-        android:layout_marginLeft="15dp"
-        android:text="Não tem cadastro?" />
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="Não tem cadastro?"
+
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnLogin"
