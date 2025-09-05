@@ -10,7 +10,9 @@
 
     <ImageView
         android:id="@+id/imglogologin"
-        android:layout_width="150dp"
+        android:layout_width="100dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
         android:layout_height="150dp"
         android:src="@drawable/amongois" />
 
@@ -38,7 +40,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edtEmail"
-        star
+        app:startIconDrawable="@drawable/baseline_lock"
+        app:endIconMode="password_toggle"
         android:hint="Insira sua senha">
 
 
