@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -12,16 +12,42 @@
         android:id="@+id/imglogologin"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/amongois"
+        android:src="@drawable/amongois" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/edtEmail"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtEmail"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglogologin"
+        app:startIconDrawable="@drawable/baseline_email"
+        app:endIconMode="clear_text"
+        android:hint="Insira seu email">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtSennha"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEmail"
+        star
+        android:hint="Insira sua senha">
 
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-</LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>
