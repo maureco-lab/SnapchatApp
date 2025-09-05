@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RecuperarSenhaActivity">
+    tools:context=".RecuperarSenhaActivity"
+    android:layout_margin="25dp"
+    >
 
     <ImageView
         android:id="@+id/imglogologin"
@@ -16,11 +18,23 @@
         android:layout_centerInParent="true"
         android:src="@drawable/amongois" />
 
+    <TextView
+        android:id="@+id/txtSnap"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SnapChat"
+        android:layout_below="@id/imglogologin"
+        android:layout_centerInParent="true"
+        android:textSize="28dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/caprasimoregular"
+        />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imglogologin"
+        android:layout_below="@+id/txtSnap"
         android:layout_margin="10dp"
         android:hint="Insira seu email"
         app:endIconMode="clear_text"
